@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width">
     <title>Weather app</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <h1>Weather app</h1>
-    <div class="container flex">
-      <div class="mainInterface">
+    <main class="container flex">
+      <section class="mainInterface">
         <div class="zip">
           <div class="weather-icon">
             <img src="https://openweathermap.org/img/wn/10d@2x.png">
@@ -42,13 +42,13 @@
           </div>
         </div>
         
-      </div>
-    </div>
+      </section>
+    </main>
     <div class="zip">
       <form id="frm1" action="/action_page.php">
-<input type="text" name="fname" placeholder="Zip Code">
-  
-</form> 
+        <label for="zipCode"></label>
+        <input type="text" name="fname" id="zipCode" placeholder="Zip Code">
+      </form> 
       <button class="zipBut button button-29" role="button">Search Zip Code</button>
     </div>
     <script src="script.js"></script>

@@ -1,3 +1,4 @@
+debugger;
 let units = 'imperial';//initailize the unit of measurement for open weather map API
 let uOfm = 'F'; //set the unit of measurment for the page 
 let temp;
@@ -7,6 +8,7 @@ const iconElement = document.querySelector('.weather-icon');
 const degree = document.querySelector('.degree');
 const fanCel = document.querySelector('.fanCel');
 const cond = document.querySelector('.condition');
+
 function getWeatherAndLocation(unit, fandc){
   const success = (position)=>{//retruns the users location and fetch the data from the location and weather API
     units = unit;
@@ -37,7 +39,7 @@ function findZip(){
   var i;
   for (i = 0; i < x.length ;i++) {
     zip += x.elements[i].value;
-    console.log(zip);
+    console.log(x);
   }
   getWeatherData('https://api.openweathermap.org/data/2.5/weather?zip='+zip+',us&units=imperial&appid=b989a956b784b1493fe08339165f3739', 'F')
   status.textContent ="Weather in " +zip
